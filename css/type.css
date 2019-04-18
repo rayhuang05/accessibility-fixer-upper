@@ -54,7 +54,7 @@ caption {
 
 hr {
   border: 0;
-  border-top: 2px solid #000;
+  border-top: 1px solid;
   height: 0;
 }
 
@@ -71,15 +71,13 @@ caption {
 
 th,
 td {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid;
   text-align: left;
   vertical-align: top;
 }
 
 thead th {
   vertical-align: bottom;
-
-  border-bottom-width: 2px;
 }
 
 .text-left {
@@ -127,24 +125,12 @@ thead th {
   margin-left: auto;
   margin-right: auto;
   max-width: 52em;
-  width: 100%;
-}
-
-.wrapper-no-center {
-  max-width: 52em;
-  width: 100%;
 }
 
 .max-length {
   margin-left: auto;
   margin-right: auto;
   max-width: 36em;
-  width: 100%;
-}
-
-.max-length-no-center {
-  max-width: 36em;
-  width: 100%;
 }
 
 h1,
@@ -167,26 +153,6 @@ pre,
 table,
 caption {
   margin: 0 0 1.3rem;
-}
-
-.tenamega {
-  font-size: 2.0408rem;
-  line-height: 2.925rem;
-}
-
-.tenakilo {
-  font-size: 1.9127rem;
-  line-height: 2.6rem;
-}
-
-.tena {
-  font-size: 1.7926rem;
-  line-height: 2.6rem;
-}
-
-.nina {
-  font-size: 1.68rem;
-  line-height: 2.275rem;
 }
 
 .yotta {
@@ -262,14 +228,15 @@ select {
   height: calc(1.3rem + .1625rem + .1625rem);
 }
 
-[type="color"] {
+input[type="color"] {
   width: calc(1.3rem + .1625rem + .1625rem);
 }
 
-[type="checkbox"],
-[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: inline-block;
   height: auto;
+  width: auto;
 }
 
 .push {
@@ -388,15 +355,16 @@ select {
 .island-quarter,
 .island-1-4,
 td,
-table th {
+table th,
+fieldset {
   padding: .325rem;
 }
 
 .island-eighth,
 .island-1-8,
-input:not([type="checkbox"]),
-input:not([type="radio"]),
-textarea {
+input,
+textarea,
+select {
   padding: .1625rem;
 }
 
@@ -430,21 +398,6 @@ caption {
   padding-right: .1625rem;
 }
 
-select {
-  padding: 0 .1625rem;
-}
-
-fieldset {
-  padding: .325rem 0;
-
-  border: 0;
-  border-top: 2px solid #000;
-}
-
-legend {
-  padding-right: .325rem;
-}
-
 @media only screen and (min-width: 38em) {
 
   html {
@@ -472,26 +425,6 @@ legend {
   table,
   caption {
     margin: 0 0 1.4rem;
-  }
-
-  .tenamega {
-    font-size: 3.6532rem;
-    line-height: 4.9rem;
-  }
-
-  .tenakilo {
-    font-size: 3.2473rem;
-    line-height: 4.55rem;
-  }
-
-  .tena {
-    font-size: 2.8865rem;
-    line-height: 3.85rem;
-  }
-
-  .nina {
-    font-size: 2.5658rem;
-    line-height: 3.5rem;
   }
 
   .yotta {
@@ -587,14 +520,15 @@ legend {
     height: calc(1.4rem + .175rem + .175rem);
   }
 
-  [type="color"] {
+  input[type="color"] {
     width: calc(1.4rem + .175rem + .175rem);
   }
 
-  [type="checkbox"],
-  [type="radio"] {
+  input[type="checkbox"],
+  input[type="radio"] {
     display: inline-block;
     height: auto;
+    width: auto;
   }
 
   .push {
@@ -713,15 +647,16 @@ legend {
   .island-quarter,
   .island-1-4,
   td,
-  table th {
+  table th,
+  fieldset {
     padding: .35rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input:not([type="checkbox"]),
-  input:not([type="radio"]),
-  textarea {
+  input,
+  textarea,
+  select {
     padding: .175rem;
   }
 
@@ -755,21 +690,6 @@ legend {
     padding-right: .175rem;
   }
 
-  select {
-    padding: 0 .175rem;
-  }
-
-  fieldset {
-    padding: .35rem 0;
-
-    border: 0;
-    border-top: 2px solid #000;
-  }
-
-  legend {
-    padding-right: .35rem;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -799,26 +719,6 @@ legend {
   table,
   caption {
     margin: 0 0 1.5rem;
-  }
-
-  .tenamega {
-    font-size: 3.6532rem;
-    line-height: 4.875rem;
-  }
-
-  .tenakilo {
-    font-size: 3.2473rem;
-    line-height: 4.5rem;
-  }
-
-  .tena {
-    font-size: 2.8865rem;
-    line-height: 4.125rem;
-  }
-
-  .nina {
-    font-size: 2.5658rem;
-    line-height: 3.375rem;
   }
 
   .yotta {
@@ -914,14 +814,15 @@ legend {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  [type="color"] {
+  input[type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  [type="checkbox"],
-  [type="radio"] {
+  input[type="checkbox"],
+  input[type="radio"] {
     display: inline-block;
     height: auto;
+    width: auto;
   }
 
   .push {
@@ -1040,15 +941,16 @@ legend {
   .island-quarter,
   .island-1-4,
   td,
-  table th {
+  table th,
+  fieldset {
     padding: .375rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input:not([type="checkbox"]),
-  input:not([type="radio"]),
-  textarea {
+  input,
+  textarea,
+  select {
     padding: .1875rem;
   }
 
@@ -1080,21 +982,6 @@ legend {
   .gutter-1-8 {
     padding-left: .1875rem;
     padding-right: .1875rem;
-  }
-
-  select {
-    padding: 0 .1875rem;
-  }
-
-  fieldset {
-    padding: .375rem 0;
-
-    border: 0;
-    border-top: 2px solid #000;
-  }
-
-  legend {
-    padding-right: .375rem;
   }
 
 }
@@ -1128,26 +1015,6 @@ legend {
     margin: 0 0 1.5rem;
   }
 
-  .tenamega {
-    font-size: 3.6532rem;
-    line-height: 4.875rem;
-  }
-
-  .tenakilo {
-    font-size: 3.2473rem;
-    line-height: 4.5rem;
-  }
-
-  .tena {
-    font-size: 2.8865rem;
-    line-height: 4.125rem;
-  }
-
-  .nina {
-    font-size: 2.5658rem;
-    line-height: 3.375rem;
-  }
-
   .yotta {
     font-size: 2.2807rem;
     line-height: 3rem;
@@ -1241,14 +1108,15 @@ legend {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  [type="color"] {
+  input[type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  [type="checkbox"],
-  [type="radio"] {
+  input[type="checkbox"],
+  input[type="radio"] {
     display: inline-block;
     height: auto;
+    width: auto;
   }
 
   .push {
@@ -1367,15 +1235,16 @@ legend {
   .island-quarter,
   .island-1-4,
   td,
-  table th {
+  table th,
+  fieldset {
     padding: .375rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input:not([type="checkbox"]),
-  input:not([type="radio"]),
-  textarea {
+  input,
+  textarea,
+  select {
     padding: .1875rem;
   }
 
@@ -1407,21 +1276,6 @@ legend {
   .gutter-1-8 {
     padding-left: .1875rem;
     padding-right: .1875rem;
-  }
-
-  select {
-    padding: 0 .1875rem;
-  }
-
-  fieldset {
-    padding: .375rem 0;
-
-    border: 0;
-    border-top: 2px solid #000;
-  }
-
-  legend {
-    padding-right: .375rem;
   }
 
 }
